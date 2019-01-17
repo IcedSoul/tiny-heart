@@ -13,8 +13,8 @@ git clone https://github.com/IcedSoul/tiny-heart
 
 这里放出版本名称和贡献者
 
-作者 | 版本名称 | 风格 | 作者Github
----|---|---|---|---
+作者 | 版本名称 | 风格 | 作者Github  
+---|---|---|---
 IcedSoul|birthday-basic|粉红/回忆|https://github.com/IcedSoul
 
 ## 结束
