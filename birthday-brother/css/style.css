@@ -1,0 +1,2195 @@
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #fff;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-color:#fff;
+}
+
+.bgcolor {
+	background: #79a8ae;
+    background: -webkit-linear-gradient(top left, #79a8ae 0%, #79a8ae 100%);
+    background: linear-gradient(to bottom right, #79a8ae 0%, #79a8ae 100%);
+    opacity: 0.9;
+}
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 30s infinite;
+  animation: square 30s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-900px) rotate(600deg);
+            transform: translateY(-900px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-900px) rotate(600deg);
+            transform: translateY(-900px) rotate(600deg);
+  }
+}
+/***                                  内容区域                                 ***/
+/**                                   第一部分                                  **/
+/*盒子*/
+.ly-box01 {
+	width:50px;
+	height:50px;
+	background-color:#FFF;
+	border-radius: 25px;
+	position: absolute;
+	left: 48%;
+	bottom: 50%;
+	margin-bottom:50%;
+	overflow: hidden;
+	transform-origin:center bottom;
+	animation:box_to_point 18.5s 0s,bounce 2.5s 18.5s;
+}
+
+@keyframes box_to_point{
+	0% {
+		margin-bottom:50%;
+		width:50px;
+		height:50px;
+		border-radius: 25px;
+		position: absolute;
+		left: 48%;
+		bottom: 50%;
+		}
+	10% {
+		margin-bottom:0;
+		width:50px;
+		height:50px;
+		border-radius: 25px;
+		background-color:rgba(255,255,255,1);
+		position: absolute;
+		left: 48%;
+		bottom: 50%;
+	}
+	14% {
+		margin-bottom:0;
+		width: 80%;
+		height: 550px;
+		border-radius: 6px;
+		background-color:rgba(255,255,255,0.5);
+		position: absolute;
+		left: 10%;
+		bottom: 12%;
+	}
+	96% {
+		margin-bottom:0;
+		width: 80%;
+		height: 550px;
+		border-radius: 6px;
+		background-color:rgba(255,255,255,0.6);
+		position: absolute;
+		left: 10%;
+		bottom: 12%;
+	}
+	100% {
+		margin-bottom:0;
+		width:50px;
+		height:50px;
+		border-radius: 25px;
+		background-color:rgba(255,255,255,1);
+		position: absolute;
+		left: 48%;
+		bottom: 50%;
+	}
+}
+@-webkit-keyframes box_to_point{
+	0% {
+		margin-bottom:50%;
+		width:50px;
+		height:50px;
+		border-radius: 25px;
+		position: absolute;
+		left: 48%;
+		bottom: 50%;
+		}
+	10% {
+		margin-bottom:0;
+		width:50px;
+		height:50px;
+		border-radius: 25px;
+		background-color:rgba(255,255,255,1);
+		position: absolute;
+		left: 48%;
+		bottom: 50%;
+	}
+	14% {
+		margin-bottom:0;
+		width: 80%;
+		height: 550px;
+		border-radius: 6px;
+		background-color:rgba(255,255,255,0.5);
+		position: absolute;
+		left: 10%;
+		bottom: 12%;
+	}
+	96% {
+		margin-bottom:0;
+		width: 80%;
+		height: 550px;
+		border-radius: 6px;
+		background-color:rgba(255,255,255,0.6);
+		position: absolute;
+		left: 10%;
+		bottom: 12%;
+	}
+	100% {
+		margin-bottom:0;
+		width:50px;
+		height:50px;
+		border-radius: 25px;
+		background-color:rgba(255,255,255,1);
+		position: absolute;
+		left: 48%;
+		bottom: 50%;
+	}
+}
+@keyframes bounce{
+	0% {
+		margin-bottom:0;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		bottom:50%;
+		left: 48%;
+	}
+	50% {
+		margin-bottom:0;
+		left: 48%;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		bottom:0;
+		left: 48%;
+	}
+	100% {
+		margin-bottom:0;
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		left: 48%;
+		bottom: 0;
+		left: 20%;
+	}
+}
+@-webkit-keyframes bounce{
+		0% {
+		margin-bottom:0;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		bottom:50%;
+		left: 48%;
+	}
+	50% {
+		margin-bottom:0;
+		left: 48%;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		bottom:0;
+		left: 48%;
+	}
+	100% {
+		margin-bottom:0;
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		left: 48%;
+		bottom: 0;
+		left: 20%;
+	}
+}
+/*文本*/
+.ly-txt01 {
+	position:absolute;
+	width: 40%;
+	left:10%;
+	top:10%;
+}
+.ly-txt02 {
+	position:absolute;
+	width: 40%;
+	left:60%;
+	top:10%;
+}
+.ly-stxt01 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	left: 5%;
+	top: 5%;
+	opacity: 0;
+	animation:ly-stxt01_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt01_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt01_move{
+	0% {opacity:0;}
+	8% {opacity:1;}
+	90% {opacity:1;}
+	98% {opacity:0;}
+	100% {opacity:0;}
+}
+@-webkit-keyframes ly-stxt01_move{
+	0% {opacity:0;}
+	8% {opacity:0;}
+	90% {opacity:1;}
+	98% {opacity:0;}
+	100% {opacity:0;}
+}
+
+.ly-stxt02 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	left: 5%;
+	top: 5%;
+	margin-top:-71px;
+	opacity: 0;
+	animation:ly-stxt02_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt02_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt02_move{
+	0% {opacity:0;margin-top:-71px;}
+	8% {opacity:0;margin-top:-71px;}
+	16% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt02_move{
+	0% {opacity:0;margin-top:-71px;}
+	8% {opacity:0;margin-top:-71px;}
+	16% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt03 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	left: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt03_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt03_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt03_move{
+	0% {opacity:0;margin-top:-71px;}
+	16% {opacity:0;margin-top:-71px;}
+	24% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt03_move{
+	0% {opacity:0;margin-top:-71px;}
+	16% {opacity:0;margin-top:-71px;}
+	24% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt04 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	left: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt04_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt04_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt04_move{
+	0% {opacity:0;margin-top:-71px;}
+	24% {opacity:0;margin-top:-71px;}
+	32% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt04_move{
+	0% {opacity:0;margin-top:-71px;}
+	24% {opacity:0;margin-top:-71px;}
+	32% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt05 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	left: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt05_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt05_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt05_move{
+	0% {opacity:0;margin-top:-71px;}
+	32% {opacity:0;margin-top:-71px;}
+	40% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt05_move{
+	0% {opacity:0;margin-top:-71px;}
+	32% {opacity:0;margin-top:-71px;}
+	40% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt06 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	right: 5%;
+	top: 5%;
+	opacity: 0;
+	animation:ly-stxt06_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt06_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt06_move{
+	0% {opacity:0;}
+	40% {opacity:0;}
+	48% {opacity:1;}
+	90% {opacity:1;}
+	100% {opacity:0;}
+}
+@-webkit-keyframes ly-stxt06_move{
+	0% {opacity:0;}
+	40% {opacity:0;}
+	48% {opacity:1;}
+	90% {opacity:1;}
+	100% {opacity:0;}
+}
+
+.ly-stxt07 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	right: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt07_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt07_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt07_move{
+	0% {opacity:0;margin-top:-71px;}
+	48% {opacity:0;margin-top:-71px;}
+	56% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt07_move{
+	0% {opacity:0;margin-top:-71px;}
+	48% {opacity:0;margin-top:-71px;}
+	56% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt08 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	right: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt08_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt08_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt08_move{
+	0% {opacity:0;margin-top:-71px;}
+	56% {opacity:0;margin-top:-71px;}
+	64% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt08_move{
+	0% {opacity:0;margin-top:-71px;}
+	56% {opacity:0;margin-top:-71px;}
+	64% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt09 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	right: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt09_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt09_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt09_move{
+	0% {opacity:0;margin-top:-71px;}
+	64% {opacity:0;margin-top:-71px;}
+	72% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt09_move{
+	0% {opacity:0;margin-top:-71px;}
+	64% {opacity:0;margin-top:-71px;}
+	72% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+
+.ly-stxt10 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	right: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt10_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt10_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt10_move{
+	0% {opacity:0;margin-top:-71px;}
+	72% {opacity:0;margin-top:-71px;}
+	80% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt10_move{
+	0% {opacity:0;margin-top:-71px;}
+	72% {opacity:0;margin-top:-71px;}
+	80% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+/**                                      第二部分                                       **/
+/*时间轴的线*/
+
+.timeline {
+	width: 8px;
+	height: 0;
+	position: absolute;
+	left: 20%;
+	top:-100%;
+	background-color: #ccc;
+	border-radius:3px;
+	transition: all 2s;
+}
+.active .timeline {
+	width: 10px;
+	height: 100%;
+	top:0;
+	transition-delay: 0.1s;
+}
+/*时间轴上的点*/
+.timepoint {
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	position: absolute;
+	left:20%;
+	top: 15.5%;
+	opacity: 0;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 0.3s; 
+}
+.active .timepoint {
+	opacity: 1;
+	transition-delay: 2s;
+}
+/**时间轴上的点**/
+.timepoint11 {
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	position: absolute;
+	left:20%;
+	top: 0;
+	opacity: 1;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 1s;
+}
+.active .timepoint11 {
+	top:15.5%;
+	transition-delay: 2s;
+}
+
+/* 盒子 */
+.ly-box11 {
+	width: 30%;
+	height: 600px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 23%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box11{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 2.5s;
+}
+/*小三角*/
+.ly-triangle11 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 77%;
+	top: 14%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 0.5s;
+}
+.active .ly-triangle11 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 3.5s;
+}
+/*图片*/
+.ly-imgbox11{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox11{
+	opacity:1;
+	transition-delay:3.5s;
+}
+.ly-img11{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+/*文本*/
+.ly-txt11 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 4%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt11 {
+	opacity: 1;
+	transition-delay: 3.5s;
+}
+
+
+.ly-txt12 {
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	text-indent:2em;
+	font-color: #000;
+	position: absolute;
+	padding-top: 20px;
+	left: 5%;
+	top: 12%;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.active .ly-txt12 {
+	opacity: 1;
+	transition-delay: 4s;
+}
+
+/* 盒子 */
+.ly-box12 {
+	width: 40%;
+	height: 600px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 57%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box12{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 5s;
+}
+/*小三角*/
+.ly-triangle12 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 43%;
+	top: 14%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle12 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 6s;
+}
+/*文本*/
+.ly-txt13 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 4%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt13 {
+	opacity: 1;
+	transition-delay: 6s;
+}
+
+.ly-txt14 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	font-color: #000;
+	position: absolute;
+	margin-left:30px;
+	margin-right:30px;
+	top: 12%;
+	opacity: 1;
+	transition: all 13s;
+	height:0;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt14 {
+	height:500px;
+	transition-delay: 6.5s;
+}
+
+/**                                        第三部分                                  **/
+
+/**时间轴上的点**/
+.timepoint21 {
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	position: absolute;
+	left:20%;
+	top: 0;
+	opacity: 1;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+.active .timepoint21 {
+	top:15.5%;
+	transition-delay: 1.5s;
+}
+
+/* 盒子 */
+.ly-box21 {
+	width: 15%;
+	height: 600px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 23%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box21{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 2.5s;
+}
+/*小三角*/
+.ly-triangle21 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 77%;
+	top: 14%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 0.5s;
+}
+.active .ly-triangle21 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 3.5s;
+}
+/*图片*/
+.ly-imgbox21{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox21{
+	opacity:1;
+	transition-delay:3.5s;
+}
+.ly-img21{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+/*文本*/
+.ly-txt21 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 2%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt21 {
+	opacity: 1;
+	transition-delay: 3.5s;
+}
+
+
+.ly-txt22 {
+	font-family: Microsoft YaHei;
+	font-size: 13px;
+	text-indent:2em;
+	font-color: #000;
+	position: absolute;
+	left: 5%;
+	top: 8%;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.active .ly-txt22 {
+	opacity: 1;
+	transition-delay: 4s;
+}
+
+/* 盒子 */
+.ly-box22 {
+	width: 15%;
+	height: 510px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 42%;
+	top:22%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box22{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 5s;
+}
+/*小三角*/
+.ly-triangle22 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 58%;
+	top: 25%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle22 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 6s;
+}
+/*文本*/
+.ly-txt23 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 2%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt23 {
+	opacity: 1;
+	transition-delay: 6s;
+}
+
+.ly-txt24 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:11%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt24 {
+	opacity:1;
+	transition-delay: 7.0s;
+}
+/*图片*/
+.ly-imgbox22{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox22{
+	opacity:1;
+	transition-delay:6s;
+}
+.ly-img22{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+/* 盒子 */
+.ly-box23 {
+	width: 34%;
+	height: 0;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 61%;
+	bottom:6%;
+	overflow: hidden;
+	opacity: 0.9;
+	transition: all 10s;
+}
+.active .ly-box23{
+	height:600px;
+	transition-delay: 8s;
+}
+/*小三角*/
+.ly-triangle23 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 39%;
+	top: 66%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle23 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 12s;
+}
+/*文本*/
+.ly-txt25 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 2%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt25 {
+	opacity: 1;
+	transition-delay: 6s;
+}
+
+.ly-txt26 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:11%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt26 {
+	opacity:1;
+	transition-delay: 14s;
+}
+/*图片*/
+.ly-imgbox23{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox23{
+	opacity:1;
+	transition-delay:12s;
+}
+.ly-img23{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+
+
+
+/**                                      第四部分                                    **/
+
+/**时间轴上的点**/
+.timepoint31 {
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	position: absolute;
+	left:20%;
+	top: 0;
+	opacity: 1;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 1s;
+}
+.active .timepoint31 {
+	top:15.5%;
+	transition-delay: 2s;
+}
+/* 盒子 */
+.ly-box31 {
+	width: 30%;
+	height: 600px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 23%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box31{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 2.5s;
+}
+/*小三角*/
+.ly-triangle31 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 77%;
+	top: 14%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 0.5s;
+}
+.active .ly-triangle31 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 3.5s;
+}
+/*图片*/
+.ly-imgbox31{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox31{
+	opacity:1;
+	transition-delay:3.5s;
+}
+.ly-img31{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+/*文本*/
+.ly-txt31 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 4%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt31 {
+	opacity: 1;
+	transition-delay: 3.5s;
+}
+
+
+.ly-txt32 {
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	text-indent:2em;
+	font-color: #000;
+	position: absolute;
+	padding-top: 20px;
+	left: 5%;
+	top: 12%;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.active .ly-txt32 {
+	opacity: 1;
+	transition-delay: 4s;
+}
+
+/* 盒子 */
+.ly-box32 {
+	width: 40%;
+	height: 400px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 57%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box32{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 5s;
+}
+/*小三角*/
+.ly-triangle32 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 43%;
+	top: 14%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle32 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 6s;
+}
+/*文本*/
+.ly-txt33 {
+	font-family: Microsoft YaHei;
+	font-size: 30px;
+	text-shadow: 1px;
+	font-color: #000;
+	position: absolute;
+	left: 3%;
+	top: 4%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.active .ly-txt33 {
+	opacity: 1;
+	transition-delay: 6s;
+}
+
+.ly-txt34 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	font-color: #000;
+	position: absolute;
+	margin-left:30px;
+	margin-right:30px;
+	top: 12%;
+	opacity: 1;
+	transition: all 13s;
+	height:0;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt34 {
+	height:500px;
+	transition-delay: 6.5s;
+}
+.ly-imgbox31{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox31{
+	opacity:1;
+	transition-delay:3.5s;
+}
+.ly-img31{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+/*后续修正*/
+
+.ly-box51 {
+	width: 34%;
+	height: 0;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 61%;
+	bottom:6%;
+	overflow: hidden;
+	opacity: 0.9;
+	transition: all 10s;
+}
+.active .ly-box51{
+	height:500px;
+	transition-delay: 8s;
+}
+.ly-txt51 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt51 {
+	opacity:1;
+	transition-delay: 7.0s;
+}
+.ly-box52 {
+	width: 15%;
+	height: 550px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 23%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box52{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 2.5s;
+}
+
+.ly-imgbox61{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 41%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox61{
+	opacity:1;
+	transition-delay:12s;
+}
+.ly-img61{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	margin-bottom:-250px;
+}
+.ly-txt61 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt61 {
+	opacity:1;
+	transition-delay: 14s;
+}
+.wwww1 {
+	margin-before: 0.5em;
+	margin-after: 0.5em;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+}
+
+.ly-txt71 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt71 {
+	opacity:1;
+	transition-delay: 7.0s;
+}
+/*图片*/
+.ly-imgbox71{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox71{
+	opacity:1;
+	transition-delay:6.5s;
+}
+.ly-img71{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.ly-box71 {
+	width: 15%;
+	height: 540px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 42%;
+	top:17%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box71{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 5s;
+}
+.xx71 {
+	height:550px;
+	top:16%;
+}
+.xx72 {
+	top:20%;
+}
+.timepoint71 {
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	position: absolute;
+	left:20%;
+	top: 0;
+	opacity: 1;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+.active .timepoint71 {
+	top:21%;
+	transition-delay: 1.5s;
+}
+.ly-box72 {
+	width: 15%;
+	height: 450px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 61%;
+	bottom:6.5%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box72{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 8s;
+}
+.ly-triangle71 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 39%;
+	top: 45%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle71 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 8.5s;
+}
+
+.ly-box73 {
+	width: 15%;
+	height: 400px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 80%;
+	bottom:6.5%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box73{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 11s;
+}
+.ly-triangle72 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 20%;
+	top: 55%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle72 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 12s;
+}
+.ly-txt72 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt72 {
+	opacity:1;
+	transition-delay: 9s;
+}
+/*图片*/
+.ly-imgbox72{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox72{
+	opacity:1;
+	transition-delay:8.5s;
+}
+.ly-img72{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.ly-txt73 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt73 {
+	opacity:1;
+	transition-delay: 13s;
+}
+/*图片*/
+.ly-imgbox73{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 77%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox73{
+	opacity:1;
+	transition-delay:12.5s;
+}
+.ly-img73{
+	position: absolute;
+	height: 100%;
+	margin-left:-200px;
+	bottom: 0;
+}
+
+.ly-box81 {
+	width: 15%;
+	height: 600px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 23%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box81{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 2.5s;
+}
+.ly-txt82 {
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	text-indent:1em;
+	font-color: #000;
+	position: absolute;
+	padding-top: 20px;
+	left: 5%;
+	top: 11%;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.active .ly-txt82 {
+	opacity: 1;
+	transition-delay: 4s;
+}
+/*图片*/
+.ly-imgbox81{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 90%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox81{
+	opacity:1;
+	transition-delay:3.5s;
+}
+.ly-img81{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.ly-box82 {
+	width: 54%;
+	height: 600px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 42%;
+	top:10%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box82{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 5s;
+}
+/*小三角*/
+.ly-triangle82 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 58%;
+	top: 14%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle82 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 6s;
+}
+/*文本*/
+
+
+.ly-txt84 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 15px;
+	font-color: #000;
+	position: absolute;
+	margin-left:30px;
+	margin-right:30px;
+	top: 12%;
+	opacity: 1;
+	transition: all 33s;
+	height:0;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt84 {
+	height:500px;
+	transition-delay: 6.5s;
+}
+.ly-txt90 {
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt90 {
+	opacity:1;
+	transition-delay: 4.5s;
+}
+.ly-txt91 {
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt91 {
+	opacity:1;
+	transition-delay: 7.0s;
+}
+/*图片*/
+.ly-imgbox91{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox91{
+	opacity:1;
+	transition-delay:6.5s;
+}
+.ly-img91{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.ly-box91 {
+	width: 15%;
+	height: 450px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 42%;
+	bottom:18%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box91{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 5s;
+}
+.xx91 {
+	height: 450px;
+	top:18%;
+}
+.xx92 {
+	top:22%;
+}
+.timepoint91 {
+	width: 20px;
+	height: 20px;
+	margin-left: -5px;
+	position: absolute;
+	left:20%;
+	top: 0;
+	opacity: 1;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+.active .timepoint91 {
+	top:23.5%;
+	transition-delay: 1.5s;
+}
+.ly-box92 {
+	width: 15%;
+	height: 450px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 61%;
+	bottom:18%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box92{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 8s;
+}
+.ly-triangle91 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 39%;
+	top:22%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle91 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 8.5s;
+}
+
+.ly-box93 {
+	width: 15%;
+	height: 450px;
+	border: 2px #CCC;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 8px;
+	position: absolute;
+	left: 80%;
+	bottom:18%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-box93{
+	opacity: 0.9;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 11s;
+}
+.ly-triangle92 {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent; 
+	border-right: 22px solid white; 
+	border-bottom: 20px solid transparent;
+	border-radius: 2px; 
+	margin-left: 24px;
+	position: absolute;
+	right: 20%;
+	top:22%;
+	opacity: 0;
+	-webkit-transform: scale(0.5, 0.5);
+	transform: scale(0.5, 0.5);
+	transition: all 1s;
+}
+.active .ly-triangle92 {
+	opacity: 0.6;
+	margin-left: 2px;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition-delay: 12s;
+}
+.ly-txt92 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt92 {
+	opacity:1;
+	transition-delay: 9s;
+}
+/*图片*/
+.ly-imgbox92{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox92{
+	opacity:1;
+	transition-delay:8.5s;
+}
+.ly-img92{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.ly-txt93 {
+	text-indent:2em;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	font-color: #000;
+	position: absolute;
+	width:80%;
+	top:9%;
+	margin-left:5%;
+	opacity: 0;
+	transition: all 0.5s;
+	width:88%;
+	overflow:hidden;
+}
+
+.active .ly-txt93 {
+	opacity:1;
+	transition-delay: 13s;
+}
+/*图片*/
+.ly-imgbox93{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox93{
+	opacity:1;
+	transition-delay:12.5s;
+}
+.ly-img93{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.xx94 {
+	height:80%;
+}
