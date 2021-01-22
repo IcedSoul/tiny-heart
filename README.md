@@ -17,6 +17,7 @@ git clone https://github.com/IcedSoul/tiny-heart
 ---|---|---|---
 IcedSoul|birthday-basic|粉红/回忆|https://github.com/IcedSoul
 weingxing|birthday-brother|蓝色/兄弟|https://github.com/weingxing
+weingxing|birthday-mobile|适配移动端|https://github.com/weingxing
 
 ## 结束
 欢迎star&fork，也欢迎其它贡献者
